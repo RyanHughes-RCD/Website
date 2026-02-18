@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
         * {
             margin: 0;
@@ -175,3 +176,182 @@
              text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.95);
         }   
 
+=======
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #ffffff;
+            font-family: Trebuchet MS, sans-serif;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            color: #333333;
+            padding: 0 0rem;
+            overflow-y: scroll;
+        }
+
+        .shadow-image {
+            /* Initial state (optional, for a subtle starting shadow) */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            /* Smooth transition for the shadow effect */
+            transition: box-shadow 0.3s ease-in-out;
+            width: 100%;
+            display: block;
+        }
+        .shadow-image:hover {
+             /* Shadow on hover: horizontal offset, vertical offset, blur radius, color */
+             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+        
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Force a new flex row and add visible separation */
+        .break-row {
+            flex-basis: 100%;
+            width: 100%;
+            height: 1.25rem; /* vertical spacing */
+            margin: 0 0 1rem 0;
+            border-bottom: 2px solid rgba(0,0,0,0.08); /* subtle divider */
+        }
+        
+        .image-item {
+            text-align: center;
+            width: 240px;
+        }
+
+        .image-itemAnniv {
+            text-align: center;
+            width: 450px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            width: 400px;
+        }    
+        
+        .gallery-itemLG {
+            text-align: center;
+            width: 800px;
+        }   
+        
+        .image-item p {
+            margin-top: 0.5rem;
+            font-weight: bold;
+        }
+        
+        header {
+            background: url('/Images/HeaderV3.webp') no-repeat center center/cover;
+            color: #ffffff;
+            padding: 5rem;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 4.5rem;
+            font: italic 900 4.5rem/1 'Baletta', sans-serif;
+        }
+
+        nav {
+            background: linear-gradient(to bottom, #9c0202);
+            color: #ffffff;
+            padding: 1rem;
+            text-align:center;
+            position: relative;
+            z-index: 10;
+            overflow: visible;
+            margin-bottom: 1rem;
+            border-top: #000000 solid 0.2rem;
+            border-bottom: #000000 solid 0.2rem;
+            width: 100%;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 8%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            position: relative;
+            top: 0px; /* move nav text up */
+            z-index: 4; /* keep links above centered logo */
+            display: inline-block;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .nav-logo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 160px;
+            height: auto;
+            z-index: 3;
+        }
+
+        main {
+            max-width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+        
+        .main-wrapper {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            
+        }
+        
+        .left-sidebar {
+            flex: 0 0 200px;
+            padding: 0.5rem;
+            background: #d3d3d3;
+            border-width: 0.1rem;
+        }
+        
+        .left-sidebar h3 {
+            color: #643412;
+            margin-bottom: 0.1rem;
+            font-size: 1.2rem;
+        }
+        
+        .left-sidebar p {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+        
+        .content-wrapper {
+            flex: 1;
+        }
+        footer {
+            background: #362007;
+            color: #ada8be;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 4rem; /* reduced from 25rem to tighten bottom spacing */
+        }
+
+        /* ensure the final one or two image items don't add extra bottom space */
+        .image-container .image-item:nth-last-child(-n+2) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .stroke-text {
+            -webkit-text-stroke-width: 0.01px; /* Set the width of the stroke */
+             -webkit-text-stroke-color: rgb(255, 255, 255); /* Set the color of the stroke */
+             color: rgb(255, 255, 255); /* Set the fill color of the text */   
+             text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.95);
+        }   
+
+>>>>>>> 68634b4fd3c35453ebd62229e3c4faae41314fbd
