@@ -69,7 +69,7 @@
         }
         
         header {
-            background: url('../Images/HeaderV3.webp') no-repeat center center/cover;
+            background: url('./Images/HeaderV3.webp') no-repeat center center/cover;
             color: #ffffff;
             padding: 5rem;
             text-align: center;
